@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="bootable/recovery" name="platform/bootable/recovery" remote="rk" revision="refs/tags/android-11.0-ebook-rkr1" />
+  <project path="device/rockchip/rk356x" name="rk/device/rockchip/rk3566" remote="rk" revision="refs/tags/android-11.0-ebook-rkr1" />
+  <project path="external/skia" name="platform/external/skia" remote="rk" revision="refs/tags/android-11.0-ebook-rkr1" />
+  <project path="frameworks/base" name="platform/frameworks/base" remote="rk" revision="refs/tags/android-11.0-ebook-rkr1" />
+  <project path="frameworks/native" name="platform/frameworks/native" remote="rk" revision="refs/tags/android-11.0-ebook-rkr1"/>
+  <project path="system/core" name="platform/system/core" remote="rk" revision="refs/tags/android-11.0-ebook-rkr1" />
+  <project path="system/linkerconfig" name="platform/system/linkerconfig" remote="rk" revision="refs/tags/android-11.0-ebook-rkr1" />
+  <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" remote="rk" revision="refs/tags/android-11.0-ebook-rkr1" />
+  <project path="RKTools" name="RKTools" remote="rk" revision="refs/tags/android-11.0-ebook-rkr1" />
+</manifest>

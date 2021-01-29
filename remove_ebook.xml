@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Checkout For Eink Branch -->
+    <remove-project name="platform/bootable/recovery" />
+    <remove-project name="platform/external/skia" />
+    <remove-project name="platform/frameworks/base" />
+    <remove-project name="platform/frameworks/native" />
+    <remove-project name="platform/system/core" />
+    <remove-project name="platform/system/hardware/interfaces" />
+    <remove-project name="platform/system/linkerconfig" />
+    <remove-project name="RKTools" />
+</manifest>
