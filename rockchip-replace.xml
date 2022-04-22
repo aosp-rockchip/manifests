@@ -49,7 +49,7 @@
     <linkfile dest="kernel/kernel/configs/rockchip3399.config" src="rockchip/rockchip3399.config"/>
     <linkfile dest="kernel/kernel/configs/non_debuggable.config" src="r/android-4.19/non_debuggable.config"/>
   </project>
-  <project name="android_external_libdrm" path="external_libdrm" remote="rockchip" />
+  <project name="android_external_libdrm" path="external/libdrm" remote="rockchip" />
   <project name="android_hardware_interfaces" path="hardware/interfaces" remote="rockchip" />
   <project name="android_hardware_libhardware" path="hardware/libhardware" remote="rockchip" />
   <project name="android_system_core" path="system/core" remote="rockchip"/>
