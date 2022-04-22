@@ -57,7 +57,7 @@
     <remove-project name="device/google/coral-kernel" />
     <remove-project name="device/google/coral-sepolicy" />
     <remove-project name="device/google/redbull" />
-    <remove-project name="device/google/redbull-kernel" />
+    <remove-project name="device/google/redfin-kernel" />
     <remove-project name="device/google/redbull-sepolicy" />
     <remove-project name="device/google/redfin" />
     <remove-project name="device/google/redfin-sepolicy" />
@@ -133,5 +133,6 @@
     <remove-project name="platform/packages/apps/Car/Settings"/>
     <remove-project name="platform/packages/apps/Car/SystemUpdater"/>
     <remove-project name="platform/packages/apps/Car/tests"/>
+    <remove-project name="platform/packages/apps/Car/CompanionDeviceSupport"/>
     <remove-project name="platform/packages/apps/CarrierConfig"/>
 </manifest>
