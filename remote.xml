@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="rockchip"
+           fetch="ssh://git@github.com/aosp-rockchip/"
+           revision="refs/heads/quartz64"
+           sync-j="8" />
+
+  <remote  name="github"
+           fetch="https://github.com/"
+           sync-c="true"
+           sync-j="8" />
+
+</manifest>

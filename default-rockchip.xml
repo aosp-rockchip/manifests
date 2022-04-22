@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- remove projects -->
+  <include name="rockchip-remove.xml" />
+
+  <!-- remote definitions -->
+  <include name="remote.xml" />
+
+  <!-- replacements aosp projects -->
+  <include name="rockchip-replace.xml" />
+  
+  <!-- rockchip repos -->
+  <include name="rockchip-add.xml" />
+</manifest>
