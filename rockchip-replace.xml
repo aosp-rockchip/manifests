@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project groups="pdk" name="android_build" path="build/make" remote="rockchip">
+  <project groups="pdk" name="android_build" path="build/make" remote="rk-aosp">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
@@ -9,37 +9,37 @@
     <linkfile dest="build/target" src="target"/>
     <linkfile dest="build/tools" src="tools"/>
   </project>
-  <project groups="pdk,tradefed" name="android_build_soong" path="build/soong" remote="rockchip">
+  <project groups="pdk,tradefed" name="android_build_soong" path="build/soong" remote="rk-aosp">
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project groups="pdk" name="android_bionic" path="bionic" remote="rockchip"/>
-  <project groups="pdk" name="android_external_speex" path="external/speex" remote="rockchip" />
-  <project path="system/linkerconfig" name="android_system_linkerconfig" remote="rockchip" />
-  <project groups="pdk" name="android_system_memory_libion" path="system/memory/libion" remote="rockchip"/>
-  <project groups="pdk" name="android_bootable_recovery" path="bootable/recovery" remote="rockchip"/>
-  <project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="rockchip"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="android_frameworks_base" path="frameworks/base" remote="rockchip"/>
-  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="rockchip"/>
-  <project groups="pdk,broadcom_wlan" name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" remote="rockchip" />
-  <project groups="pdk" name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="rockchip" />
-  <project path="frameworks/av" name="android_frameworks_av" groups="pdk"  remote="rockchip"/>
-  <project path="frameworks/ex" name="android_frameworks_ex" groups="pdk-cw-fs,pdk-fs" remote="rockchip"/>
-  <project groups="pdk" name="android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="rockchip" />
-  <project groups="pdk" name="android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" remote="rockchip" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="rockchip"/>
-  <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="rockchip"/>
-  <project path="external/tinyalsa" name="android_external_tinyalsa" groups="pdk" remote="rockchip"/>
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" groups="pdk-fs" remote="rockchip" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="rockchip"/>
-  <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" groups="pdk-fs" remote="rockchip"/>
-  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" groups="pdk-fs" remote="rockchip"/>
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="rockchip"/>
-  <project path="packages/apps/Music" name="android_packages_apps_Music" groups="pdk-fs" remote="rockchip"/>
-  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" groups="pdk-fs" remote="rockchip"/>
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="rockchip"/>
-  <project path="external/iperf3" name="android_external_iperf3" groups="pdk" remote="rockchip"/>
-  <project path="kernel/configs" name="android_kernel_configs" remote="rockchip" >
+  <project groups="pdk" name="android_bionic" path="bionic" remote="rk-aosp"/>
+  <project groups="pdk" name="android_external_speex" path="external/speex" remote="rk-aosp" />
+  <project path="system/linkerconfig" name="android_system_linkerconfig" remote="rk-aosp" />
+  <project groups="pdk" name="android_system_memory_libion" path="system/memory/libion" remote="rk-aosp"/>
+  <project groups="pdk" name="android_bootable_recovery" path="bootable/recovery" remote="rk-aosp"/>
+  <project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="rk-aosp"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="android_frameworks_base" path="frameworks/base" remote="rk-aosp"/>
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="rk-aosp"/>
+  <project groups="pdk,broadcom_wlan" name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" remote="rk-aosp" />
+  <project groups="pdk" name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="rk-aosp" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk"  remote="rk-aosp"/>
+  <project path="frameworks/ex" name="android_frameworks_ex" groups="pdk-cw-fs,pdk-fs" remote="rk-aosp"/>
+  <project groups="pdk" name="android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="rk-aosp" />
+  <project groups="pdk" name="android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" remote="rk-aosp" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="rk-aosp"/>
+  <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="rk-aosp"/>
+  <project path="external/tinyalsa" name="android_external_tinyalsa" groups="pdk" remote="rk-aosp"/>
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" groups="pdk-fs" remote="rk-aosp" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="rk-aosp"/>
+  <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" groups="pdk-fs" remote="rk-aosp"/>
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" groups="pdk-fs" remote="rk-aosp"/>
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="rk-aosp"/>
+  <project path="packages/apps/Music" name="android_packages_apps_Music" groups="pdk-fs" remote="rk-aosp"/>
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" groups="pdk-fs" remote="rk-aosp"/>
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="rk-aosp"/>
+  <project path="external/iperf3" name="android_external_iperf3" groups="pdk" remote="rk-aosp"/>
+  <project path="kernel/configs" name="android_kernel_configs" remote="rk-aosp" >
     <linkfile dest="kernel/kernel/configs/android-11.config" src="rockchip/android-11.config"/>
     <linkfile dest="kernel/kernel/configs/android-11-go.config" src="rockchip/android-11-go.config"/>
     <linkfile dest="kernel/kernel/configs/rockchip3326.config" src="rockchip/rockchip3326.config"/>
@@ -49,16 +49,16 @@
     <linkfile dest="kernel/kernel/configs/rockchip3399.config" src="rockchip/rockchip3399.config"/>
     <linkfile dest="kernel/kernel/configs/non_debuggable.config" src="r/android-4.19/non_debuggable.config"/>
   </project>
-  <project name="android_external_libdrm" path="external/libdrm" remote="rockchip" />
-  <project name="android_hardware_interfaces" path="hardware/interfaces" remote="rockchip" />
-  <project name="android_hardware_libhardware" path="hardware/libhardware" remote="rockchip" />
-  <project name="android_system_core" path="system/core" remote="rockchip"/>
-  <project name="android_system_vold" path="system/vold" remote="rockchip"/>
-  <project path="packages/apps/TvSettings" name="android_packages_apps_TvSettings" remote="rockchip" />
+  <project name="android_external_libdrm" path="external/libdrm" remote="rk-aosp" />
+  <project name="android_hardware_interfaces" path="hardware/interfaces" remote="rk-aosp" />
+  <project name="android_hardware_libhardware" path="hardware/libhardware" remote="rk-aosp" />
+  <project name="android_system_core" path="system/core" remote="rk-aosp"/>
+  <project name="android_system_vold" path="system/vold" remote="rk-aosp"/>
+  <project path="packages/apps/TvSettings" name="android_packages_apps_TvSettings" remote="rk-aosp" />
 
-  <project path="external/scudo" name="android_external_scudo" groups="pdk" remote="rockchip" />
-  <project path="packages/apps/OnDeviceAppPrediction" name="android_packages_apps_OnDeviceAppPrediction" groups="pdk-fs" remote="rockchip" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="rockchip"/>
-  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="rockchip"/>
-  <project path="libcore" name="android_libcore" groups="pdk" remote="rockchip"/>
+  <project path="external/scudo" name="android_external_scudo" groups="pdk" remote="rk-aosp" />
+  <project path="packages/apps/OnDeviceAppPrediction" name="android_packages_apps_OnDeviceAppPrediction" groups="pdk-fs" remote="rk-aosp" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="rk-aosp"/>
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="rk-aosp"/>
+  <project path="libcore" name="android_libcore" groups="pdk" remote="rk-aosp"/>
 </manifest>
