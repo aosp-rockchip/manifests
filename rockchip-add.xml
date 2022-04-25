@@ -51,8 +51,8 @@
   <project name="android_system_tools_release_tools" path="system/tools/release_tools" remote="rockchip" >
     <copyfile src="restore_patches.sh" dest="restore_patches.sh"/>
   </project>
-  <!--<project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" name="android_prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="rockchip" revision="master"/>
-  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" name="android_prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="rockchip" revision="master"/> -->
+  <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="rockchip" />
+<!--  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" name="android_prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="rockchip" /> -->
   <project path="rkbin" name="android_rkbin" remote="rockchip"/>
   <project path="hardware/rockchip/librkvpu" name="android_hardware_rockchip_librkvpu" remote="rockchip"/>
   <project path="hardware/rockchip/omx_il" name="android_hardware_rockchip_omx_il" remote="rockchip"/>
