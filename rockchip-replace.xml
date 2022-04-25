@@ -15,6 +15,7 @@
   </project>
   <project groups="pdk" name="android_bionic" path="bionic" remote="rockchip"/>
   <project groups="pdk" name="android_external_speex" path="external/speex" remote="rockchip" />
+  <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" remote="rk-aosp" />
   <project path="system/linkerconfig" name="android_system_linkerconfig" remote="rockchip" />
   <project groups="pdk" name="android_system_memory_libion" path="system/memory/libion" remote="rockchip"/>
   <project groups="pdk" name="android_bootable_recovery" path="bootable/recovery" remote="rockchip"/>
