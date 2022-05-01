@@ -12,7 +12,6 @@
     <!-- Checkout For Rockchip Branch -->
     <remove-project name="kernel/configs"/>
     <remove-project name="platform/bionic" />
-    <remove-project name="platform/build" />
     <remove-project name="platform/build/soong" />
     <remove-project name="platform/development" />
     <remove-project name="platform/external/libdrm" />
