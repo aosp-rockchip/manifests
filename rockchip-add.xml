@@ -1,72 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="device/rockchip/rk356x" name="android_device_rockchip_rk356x" remote="rockchip" />
-  <project path="RKDocs/common" name="android_RKDocs_common" remote="rockchip"/>
-  <project path="RKDocs/android" name="android_RKDocs_android" remote="rockchip"/>
-  <project path="RKTools" name="android_RKTools" remote="rockchip"/>
-  <project path="hardware/rockchip/helper" name="android_hardware_rockchip_helper" remote="rockchip" />
-  <project path="hardware/rockchip/hwcomposer/drmhwc" name="android_hardware_rockchip_hwcomposer_drmhwc" remote="rockchip" />
-  <project path="hardware/rockchip/hwcomposer/drmhwc2" name="android_hardware_rockchip_hwcomposer_drmhwc2" remote="rockchip" />
-  <project path="hardware/rockchip/hwcomposer/einkhwc" name="android_hardware_rockchip_hwcomposer_einkhwc" remote="rockchip" />
-  <project path="hardware/rockchip/libgraphicpolicy" name="android_hardware_rockchip_libgraphicpolicy" remote="rockchip" />
-  <project path="hardware/rockchip/libhwjpeg" name="android_hardware_rockchip_libhwjpeg" remote="rockchip"/>
-  <project path="u-boot" name="android_u-boot" remote="rockchip"/>
-  <project path="kernel" name="android_kernel_rockchip_rk356x" remote="rockchip"/>
-
-  <project path="bootable/recovery/rkupdate" name="android_bootable_recovery_rkupdate" remote="rockchip"/>
-  <project path="bootable/recovery/rkutility" name="android_bootable_recovery_rkutility" remote="rockchip"/>
-  <project path="bootable/recovery/mtdutils" name="android_bootable_recovery_mtdutils" remote="rockchip"/>
-  <project path="bootable/recovery/pcba_core" name="android_bootable_recovery_pcba_core" remote="rockchip" />
-  <project path="external/rktoolbox" name="android_external_rktoolbox" remote="rockchip"/>
-  <project path="external/io" name="android_external_io" remote="rockchip"/>
-  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="rockchip" />
-  <project path="hardware/realtek" name="android_hardware_realtek" remote="rockchip"/>
-  <project path="device/rockchip/common" name="android_device_rockchip_common" remote="rockchip">
+  <project path="RKDocs/common" name="docs/common" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="RKDocs/android" name="docs/android" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="RKTools" name="RKTools" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/helper" name="rk/hardware/rk35/helper" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/hwcomposer/drmhwc" name="rk/hardware/rk29/hwcomposer_rga" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/hwcomposer/drmhwc2" name="rk/hardware/rk35/hwcomposer2" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/hwcomposer/einkhwc" name="rk/hardware/rk35/einkhwc" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/libgraphicpolicy" name="rk/hardware/rk29/libgraphicpolicy" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/libhwjpeg" name="rk/hardware/rk29/libhwjpeg" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="bootable/recovery/rkupdate" name="platform/bootable/recovery/rk_update" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="bootable/recovery/rkutility" name="platform/bootable/recovery/rk_utility" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="bootable/recovery/mtdutils" name="platform/bootable/recovery/mtd_utils" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <!-- Soong does not support cpp.arm <project path="external/pcba_rockchip" name="rk/platform/external/rk-pcba-test" groups="pdk" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" /> -->
+  <!-- Q has iperf3 instead <project path="external/iperf" name="platform/external/iperf" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/> -->
+  <project path="bootable/recovery/pcba_core" name="rk/platform/external/rk-pcba-test" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="external/rktoolbox" name="rk/rktoolbox" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="external/io" name="rk/platform/external/io" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="external/ntfs-3g" name="rk/platform/external/ntfs-3g" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/realtek" name="platform/hardware/realtek" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="device/rockchip/common" name="rk/device/rockchip/rksdk" remote="rk" revision="refs/tags/android-12.0-mid-rkr4.1">
       <copyfile src=".classpath" dest=".classpath"/>
       <copyfile src="mkimage.sh" dest="mkimage.sh"/>
       <copyfile src="javaenv.sh" dest="javaenv.sh"/>
       <copyfile src="build/rockchip/build.sh" dest="build.sh"/>
       <copyfile src="mkimage_ab.sh" dest="mkimage_ab.sh"/>
   </project>
-  <project path="external/usb_modeswitch" name="android_external_usb_modeswitch" remote="rockchip"/>
-  <project path="hardware/rockchip/hdmicec" name="android_hardware_rockchip_hdmicec" remote="rockchip"/>
-  <project path="hardware/rockchip/libiep" name="android_hardware_rockchip_libiep" remote="rockchip" />
-  <project path="hardware/rockchip/librga" name="android_hardware_rockchip_librga" remote="rockchip" />
-  <project path="external/abc" name="android_external_abc" remote="rockchip" />
-  <project path="external/rk_tee_user" name="android_external_rk_tee_user" remote="rockchip" />
-  <project path="rkst" name="android_rkst" remote="rockchip"/>
-  <project path="vendor/rockchip/common" name="android_vendor_rockchip_common" remote="rockchip"/>
-  <project path="vendor/rockchip/hardware" name="android_vendor_rockchip_hardware" remote="rockchip"/>
-  <project path="vendor/widevine" name="android_vendor_widevine" remote="rockchip"/>
-  <project path="hardware/rockchip/jpeghw" name="android_hardware_rockchip_jpeghw" remote="rockchip" />
-  <!--project path="hardware/rockchip/power" name="android_hardware/rockchip/power" remote="rockchip" /-->
-  <project path="hardware/rockchip/drmservice" name="android_hardware_rockchip_drmservice" remote="rockchip" />
-  <project path="hardware/rockchip/libgralloc/midgard" name="android_hardware_rockchip_libgralloc_midgard" remote="rockchip" />
-  <project path="hardware/rockchip/libgralloc/bifrost" name="android_hardware_rockchip_libgralloc_bifrost" remote="rockchip" />
-  <project path="hardware/rockchip/libgralloc/utgard" name="android_hardware_rockchip_libgralloc_utgard" remote="rockchip" />
-  <project path="hardware/rockchip/swiftshader" name="android_hardware_rockchip_swiftshader" remote="rockchip" />
-  <project path="hardware/rockchip/optee" name="android_hardware_rockchip_optee" remote="rockchip" />
-  <project path="hardware/rockchip/keymaster4" name="android_hardware_rockchip_keymaster4" remote="rockchip" />
-  <project path="hardware/rockchip/gatekeeper" name="android_hardware_rockchip_gatekeeper" remote="rockchip" />
-  <project name="android_system_tools_release_tools" path="system/tools/release_tools" remote="rockchip" >
+  <!--project path="frameworks/opt/net/pppoe" name="platform/frameworks/opt/net/pppoe" groups="pdk-fs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/-->
+  <project path="external/usb_modeswitch" name="rk/platform/external/usb_modeswitch" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/hdmicec" name="rk/hardware/rk29/hdmicec" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/libiep" name="rk/hardware/rk29/libiep" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/librga" name="linux/linux-rga" remote="rk29" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="external/abc" name="rk/platform/external/abc" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <!--project path="hardware/rockchip/liblights" name="rk/hardware/rk29/liblights" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/-->
+  <project path="external/rk_tee_user" name="rk/platform/system/rk_tee_user" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="rkst" name="rk/rkst" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="vendor/rockchip/hardware" name="rk/platform/vendor/rockchip/hardware" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="vendor/widevine" name="rk/platform/vendor/Widevine" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/jpeghw" name="rk/hardware/rk29/jpeghw" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <!--project path="hardware/rockchip/power" name="rk/hardware/rk29/power" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" /-->
+  <project path="hardware/rockchip/drmservice" name="rk/hardware/rk29/drmservice" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/thermal" name="rk/hardware/rk29/thermal" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/libgralloc/midgard" name="rk/hardware/libgralloc/midgard" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/libgralloc/bifrost" name="rk/hardware/libgralloc/bifrost" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/libgralloc/utgard" name="rk/hardware/libgralloc/utgard_new" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/swiftshader" name="rk/hardware/rk29/swiftshader" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/optee" name="rk/hardware/rk29/optee" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/keymaster4" name="rk/hardware/rk29/keymaster4" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/gatekeeper" name="rk/hardware/rk29/gatekeeper" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project name="platform/system/tools/release_tools" path="system/tools/release_tools" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" >
     <copyfile src="restore_patches.sh" dest="restore_patches.sh"/>
   </project>
-  <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="rockchip" />
-<!--  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" name="android_prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="rockchip" /> -->
-  <project path="rkbin" name="android_rkbin" remote="rockchip"/>
-  <project path="hardware/rockchip/librkvpu" name="android_hardware_rockchip_librkvpu" remote="rockchip"/>
-  <project path="hardware/rockchip/omx_il" name="android_hardware_rockchip_omx_il" remote="rockchip"/>
-  <project path="hardware/rockchip/camera" name="android_hardware_rockchip_camera" remote="rockchip"/>
-  <project path="hardware/rockchip/camera_engine_rkisp" name="android_hardware_rockchip_camera_engine_rkisp" remote="rockchip"/>
-  <project path="external/camera_engine_rkaiq" name="android_external_camera_engine_rkaiq" remote="rockchip" />
-  <project path="hardware/rockchip/audio" name="android_hardware_rockchip_audio" remote="rockchip" />
-  <project path="hardware/rockchip/sensor" name="android_hardware_rockchip_sensor" remote="rockchip"/>
-  <project path="hardware/rockchip/libmemtrack" name="android_hardware_rockchip_libmemtrack" remote="rockchip" />
-  <project path="hardware/rockchip/weaver" name="android_hardware_rockchip_weaver" remote="rockchip" />
-  <project path="hardware/rockchip/fastbootd" name="android_hardware_rockchip_fastbootd" remote="rockchip" />
-  <project path="hardware/rockchip/bootctrl" name="android_hardware_rockchip_bootctrl" remote="rockchip" />
-  <project path="hardware/rockchip/light_aidl" name="android_hardware_rockchip_light_aidl" remote="rockchip"/>
-  <project path="hardware/rockchip/power_aidl" name="android_hardware_rockchip_power_aidl" remote="rockchip"/>
-  <project path="mkcombinedroot" name="android_mkcombinedroot" remote="rockchip" />
-  <project name="android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="rockchip"/>
+  <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="rk29" revision="master"/>
+  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="rk29" revision="master"/>
+  <project path="rkbin" name="rk/rkbin" remote="rk29" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <!-- build scrpit failed in Q<project path="external/rk_tee_user" name="rk/platform/system/rk_tee_user" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" /> -->
+  <project path="hardware/rockchip/librkvpu" name="rk/hardware/rk29/librkvpu" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/omx_il" name="rk/hardware/rk29/omx_il" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/camera" name="rk/hardware/rk29/camera_v3" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/camera_engine_rkisp" name="rk/hardware/rk29/camera_engine_rkisp" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="external/camera_engine_rkaiq" name="external/camera_engine_rkaiq" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/audio" name="rk/hardware/rk29/audio" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/sensor" name="rk/hardware/rk29/sensor" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/libmemtrack" name="rk/hardware/rk29/libmemtrack" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/weaver" name="rk/hardware/rk29/weaver" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/fastbootd" name="rk/hardware/rk29/fastbootd" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/bootctrl" name="rk/hardware/rk29/bootctrl" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/rockchip/light_aidl" name="rk/hardware/rk29/lights_aidl" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/power_aidl" name="rk/hardware/rk29/power_aidl" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="mkcombinedroot" name="platform/mkcombinedroot" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/libbaseparameter" name="rk/hardware/rk29/libbaseparameter" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/libmpimmz" name="rk/hardware/rk29/mpi-mmz" remote="rk29" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="rk/packages/apps/DisplayAdjust" path="packages/apps/DisplayAdjust" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="external/rkaiq_tool_server" name="linux/app/rkaiq_tool_server" remote="rk29" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="hardware/rockchip/rknn_server" name="rk/rknn_server" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+   <!-- Part2 /> --> 
+  <project path="device/rockchip/rk356x" name="rk/device/rockchip/rk3566" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <!-- Part3 /> --> 
+  <project groups="pdk" name="platform/build" path="build/make" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/bionic" path="bionic" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/bootable/recovery" path="bootable/recovery" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="development" name="platform/development" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <!-- use the rk33/mid/10.0/develop branch for hardware/broadcom/wlan, do not update -->
+  <project groups="pdk,broadcom_wlan" name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project name="platform/hardware/interfaces" path="hardware/interfaces" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project name="platform/hardware/libhardware" path="hardware/libhardware" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk"  remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/frameworks/base" path="frameworks/base" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="frameworks/ex" name="platform/frameworks/ex" groups="pdk-cw-fs,pdk-fs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="external/f2fs-tools" name="platform/external/f2fs-tools" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="external/iperf3" name="platform/external/iperf3" groups="pdk" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/external/libdrm" path="external/libdrm" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/external/speex" path="external/speex" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" groups="pdk-fs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
+  <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="packages/modules/NetworkStack" name="platform/packages/modules/NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project path="kernel/configs" name="kernel/configs" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/system/core" path="system/core" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/system/memory/libion" path="system/memory/libion" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/system/netd" path="system/netd" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/system/vold" path="system/vold" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <!-- Security Patch 2021-0805 -->
+  <project name="platform/system/libhwbinder" path="system/libhwbinder" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/packages/services/Telephony" path="packages/services/Telephony" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/external/sqlite" path="external/sqlite" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
 </manifest>

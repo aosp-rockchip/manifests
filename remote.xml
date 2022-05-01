@@ -16,4 +16,8 @@
            sync-c="true"
            sync-j="8" />
 
+  <remote fetch="http://gitlab.com/rockchip_android_r" name="rk"/>
+  <remote fetch="http://gitlab.com/rockchip_android_r" name="rk29"/>
+  <remote fetch="http://gitlab.com/rockchip_android_r" name="rk_legacy"/>
+
 </manifest>
