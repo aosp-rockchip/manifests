@@ -78,7 +78,7 @@
    <!-- Part2 /> --> 
   <project path="device/rockchip/rk356x" name="rk/device/rockchip/rk3566" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
   <!-- Part3 /> --> 
-  <project groups="pdk" name="platform/build" path="build/make" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project groups="pdk" name="platform/build/build" path="build/make" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
   <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
   <project name="platform/bionic" path="bionic" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
   <project name="platform/bootable/recovery" path="bootable/recovery" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
