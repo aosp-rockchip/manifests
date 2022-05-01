@@ -6,8 +6,8 @@
   <!-- remote definitions -->
   <include name="remote.xml" />
 
-  <!-- replacements aosp projects 
-  <include name="rockchip-replace.xml" /> -->
+  <!-- replacements aosp projects -->
+  <include name="rockchip-replace.xml" />
   
   <!-- rockchip repos -->
   <include name="rockchip-add.xml" />
