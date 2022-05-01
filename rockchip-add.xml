@@ -81,7 +81,7 @@
   <project groups="pdk" name="platform/build/build" path="build/make" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
   <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
   <project name="platform/bionic" path="bionic" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
-  <project name="platform/bootable/recovery" path="bootable/recovery" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
+  <project name="platform/bootable/recovery/recovery" path="bootable/recovery" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
   <project path="development" name="platform/development" remote="rk" revision="refs/tags/android-12.0-mid-rkr4" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" remote="rk" revision="refs/tags/android-12.0-mid-rkr4"/>
   <!-- use the rk33/mid/10.0/develop branch for hardware/broadcom/wlan, do not update -->
