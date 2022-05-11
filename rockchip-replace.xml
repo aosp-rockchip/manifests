@@ -25,11 +25,9 @@
   <project groups="pdk" name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="rk-aosp" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk"  remote="rk-aosp"/>
   <project groups="pdk" name="android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="rk-aosp" />
-  <project groups="pdk" name="android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" remote="rk-aosp" />
   <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="rk-aosp"/>
   <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="rk-aosp"/>
   <project path="external/tinyalsa" name="android_external_tinyalsa" groups="pdk" remote="rk-aosp"/>
-  <project path="external/iperf3" name="android_external_iperf3" groups="pdk" remote="rk-aosp"/>
   <project path="kernel/configs" name="android_kernel_configs" remote="rk-aosp" >
     <linkfile dest="kernel/kernel/configs/android-11.config" src="rockchip/android-11.config"/>
     <linkfile dest="kernel/kernel/configs/android-11-go.config" src="rockchip/android-11-go.config"/>

@@ -18,10 +18,8 @@
     <remove-project name="platform/external/speex" />
     <remove-project name="platform/external/tinyalsa" />
     <remove-project name="platform/external/wpa_supplicant_8" />
-    <remove-project name="platform/external/iperf3"/>
     <remove-project name="platform/frameworks/av" />
     <remove-project name="platform/frameworks/opt/net/wifi" />
-    <remove-project name="platform/frameworks/opt/net/ethernet" />
     <remove-project name="platform/hardware/broadcom/libbt" />
     <remove-project name="platform/hardware/broadcom/wlan" />
     <remove-project name="platform/hardware/libhardware" />
