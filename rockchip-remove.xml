@@ -27,21 +27,9 @@
     <remove-project name="platform/hardware/broadcom/libbt" />
     <remove-project name="platform/hardware/broadcom/wlan" />
     <remove-project name="platform/hardware/libhardware" />
-    <remove-project name="platform/packages/modules/NetworkStack" />
-    <remove-project name="platform/packages/apps/Camera2" />
-    <remove-project name="platform/packages/apps/Settings" />
-    <remove-project name="platform/packages/apps/SoundRecorder" />
-    <remove-project name="platform/packages/apps/DeskClock" />
-    <remove-project name="platform/packages/apps/Launcher3" />
-    <remove-project name="platform/packages/apps/Music" />
-    <remove-project name="platform/packages/apps/Gallery2" />
-    <remove-project name="platform/packages/providers/MediaProvider" />
+    <remove-project name="platform/hardware/interfaces" />
     <remove-project name="platform/system/vold" />
     <remove-project name="platform/system/memory/libion" />
-    <remove-project name="platform/packages/apps/TvSettings" />
-    <remove-project name="platform/packages/apps/OnDeviceAppPrediction" />
-    <remove-project name="platform/packages/services/Telecomm" />
-    <remove-project name="platform/packages/providers/ContactsProvider" />
     <remove-project name="platform/libcore" />
 
     <!-- Unused projects -->

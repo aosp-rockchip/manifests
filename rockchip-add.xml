@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="device/rockchip/rk356x" name="android_device_rockchip_rk356x" remote="rockchip" />
   <project path="RKDocs/common" name="android_RKDocs_common" remote="rockchip"/>
   <project path="RKDocs/android" name="android_RKDocs_android" remote="rockchip"/>
   <project path="RKTools" name="android_RKTools" remote="rockchip"/>
@@ -21,7 +20,7 @@
   <project path="external/io" name="android_external_io" remote="rockchip"/>
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="rockchip" />
   <project path="hardware/realtek" name="android_hardware_realtek" remote="rockchip"/>
-  <project path="device/rockchip/common" name="android_device_rockchip_common" remote="rockchip">
+  <project path="device/rockchip/common" name="android_device_rockchip_common" remote="rk-aosp">
       <copyfile src=".classpath" dest=".classpath"/>
       <copyfile src="mkimage.sh" dest="mkimage.sh"/>
       <copyfile src="javaenv.sh" dest="javaenv.sh"/>
@@ -39,7 +38,6 @@
   <project path="vendor/rockchip/hardware" name="android_vendor_rockchip_hardware" remote="rockchip"/>
   <project path="vendor/widevine" name="android_vendor_widevine" remote="rockchip"/>
   <project path="hardware/rockchip/jpeghw" name="android_hardware_rockchip_jpeghw" remote="rockchip" />
-  <!--project path="hardware/rockchip/power" name="android_hardware/rockchip/power" remote="rockchip" /-->
   <project path="hardware/rockchip/drmservice" name="android_hardware_rockchip_drmservice" remote="rockchip" />
   <project path="hardware/rockchip/libgralloc/midgard" name="android_hardware_rockchip_libgralloc_midgard" remote="rockchip" />
   <project path="hardware/rockchip/libgralloc/bifrost" name="android_hardware_rockchip_libgralloc_bifrost" remote="rockchip" />
@@ -56,17 +54,11 @@
   <project path="rkbin" name="android_rkbin" remote="rockchip"/>
   <project path="hardware/rockchip/librkvpu" name="android_hardware_rockchip_librkvpu" remote="rockchip"/>
   <project path="hardware/rockchip/omx_il" name="android_hardware_rockchip_omx_il" remote="rockchip"/>
-  <project path="hardware/rockchip/camera" name="android_hardware_rockchip_camera" remote="rockchip"/>
-  <project path="hardware/rockchip/camera_engine_rkisp" name="android_hardware_rockchip_camera_engine_rkisp" remote="rockchip"/>
-  <project path="external/camera_engine_rkaiq" name="android_external_camera_engine_rkaiq" remote="rockchip" />
   <project path="hardware/rockchip/audio" name="android_hardware_rockchip_audio" remote="rockchip" />
   <project path="hardware/rockchip/sensor" name="android_hardware_rockchip_sensor" remote="rockchip"/>
   <project path="hardware/rockchip/libmemtrack" name="android_hardware_rockchip_libmemtrack" remote="rockchip" />
   <project path="hardware/rockchip/weaver" name="android_hardware_rockchip_weaver" remote="rockchip" />
   <project path="hardware/rockchip/fastbootd" name="android_hardware_rockchip_fastbootd" remote="rockchip" />
   <project path="hardware/rockchip/bootctrl" name="android_hardware_rockchip_bootctrl" remote="rockchip" />
-  <project path="hardware/rockchip/light_aidl" name="android_hardware_rockchip_light_aidl" remote="rockchip"/>
-  <project path="hardware/rockchip/power_aidl" name="android_hardware_rockchip_power_aidl" remote="rockchip"/>
   <project path="mkcombinedroot" name="android_mkcombinedroot" remote="rockchip" />
-  <project name="android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="rockchip"/>
 </manifest>

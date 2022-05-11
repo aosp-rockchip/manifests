@@ -31,14 +31,6 @@
   <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="rk-aosp"/>
   <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="rk-aosp"/>
   <project path="external/tinyalsa" name="android_external_tinyalsa" groups="pdk" remote="rk-aosp"/>
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" groups="pdk-fs" remote="rk-aosp" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="rk-aosp"/>
-  <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" groups="pdk-fs" remote="rk-aosp"/>
-  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" groups="pdk-fs" remote="rk-aosp"/>
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="rk-aosp"/>
-  <project path="packages/apps/Music" name="android_packages_apps_Music" groups="pdk-fs" remote="rk-aosp"/>
-  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" groups="pdk-fs" remote="rk-aosp"/>
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="rk-aosp"/>
   <project path="external/iperf3" name="android_external_iperf3" groups="pdk" remote="rk-aosp"/>
   <project path="kernel/configs" name="android_kernel_configs" remote="rk-aosp" >
     <linkfile dest="kernel/kernel/configs/android-11.config" src="rockchip/android-11.config"/>
@@ -52,13 +44,10 @@
   </project>
   <project name="android_external_libdrm" path="external/libdrm" remote="rk-aosp" />
   <project name="android_hardware_libhardware" path="hardware/libhardware" remote="rk-aosp" />
+  <project name="android_hardware_interfaces" path="hardware/interfaces" remote="rk-aosp" />
   <project name="android_system_core" path="system/core" remote="rk-aosp"/>
   <project name="android_system_vold" path="system/vold" remote="rk-aosp"/>
-  <project path="packages/apps/TvSettings" name="android_packages_apps_TvSettings" remote="rk-aosp" />
 
   <project path="external/scudo" name="android_external_scudo" groups="pdk" remote="rk-aosp" />
-  <project path="packages/apps/OnDeviceAppPrediction" name="android_packages_apps_OnDeviceAppPrediction" groups="pdk-fs" remote="rk-aosp" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="rk-aosp"/>
-  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="rk-aosp"/>
   <project path="libcore" name="android_libcore" groups="pdk" remote="rk-aosp"/>
 </manifest>
