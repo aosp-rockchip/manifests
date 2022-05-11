@@ -15,13 +15,11 @@
     <remove-project name="platform/build" />
     <remove-project name="platform/build/soong" />
     <remove-project name="platform/external/libdrm" />
-    <remove-project name="platform/external/scudo" />
     <remove-project name="platform/external/speex" />
     <remove-project name="platform/external/tinyalsa" />
     <remove-project name="platform/external/wpa_supplicant_8" />
     <remove-project name="platform/external/iperf3"/>
     <remove-project name="platform/frameworks/av" />
-    <remove-project name="platform/frameworks/ex" />
     <remove-project name="platform/frameworks/opt/net/wifi" />
     <remove-project name="platform/frameworks/opt/net/ethernet" />
     <remove-project name="platform/hardware/broadcom/libbt" />
@@ -30,7 +28,6 @@
     <remove-project name="platform/hardware/interfaces" />
     <remove-project name="platform/system/vold" />
     <remove-project name="platform/system/memory/libion" />
-    <remove-project name="platform/libcore" />
 
     <!-- Unused projects -->
     <remove-project name="device/amlogic/yukawa"/>

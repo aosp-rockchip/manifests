@@ -19,13 +19,11 @@
   <project path="system/linkerconfig" name="android_system_linkerconfig" remote="rk-aosp" />
   <project groups="pdk" name="android_system_memory_libion" path="system/memory/libion" remote="rk-aosp"/>
   <project groups="pdk" name="android_bootable_recovery" path="bootable/recovery" remote="rk-aosp"/>
-  <project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="rk-aosp"/>
   <project groups="pdk-cw-fs,pdk-fs" name="android_frameworks_base" path="frameworks/base" remote="rk-aosp"/>
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="rk-aosp"/>
   <project groups="pdk,broadcom_wlan" name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" remote="rk-aosp" />
   <project groups="pdk" name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="rk-aosp" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk"  remote="rk-aosp"/>
-  <project path="frameworks/ex" name="android_frameworks_ex" groups="pdk-cw-fs,pdk-fs" remote="rk-aosp"/>
   <project groups="pdk" name="android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="rk-aosp" />
   <project groups="pdk" name="android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" remote="rk-aosp" />
   <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="rk-aosp"/>
@@ -47,7 +45,4 @@
   <project name="android_hardware_interfaces" path="hardware/interfaces" remote="rk-aosp" />
   <project name="android_system_core" path="system/core" remote="rk-aosp"/>
   <project name="android_system_vold" path="system/vold" remote="rk-aosp"/>
-
-  <project path="external/scudo" name="android_external_scudo" groups="pdk" remote="rk-aosp" />
-  <project path="libcore" name="android_libcore" groups="pdk" remote="rk-aosp"/>
 </manifest>
