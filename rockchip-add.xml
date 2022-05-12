@@ -49,4 +49,8 @@
   <project path="hardware/rockchip/fastbootd" name="android_hardware_rockchip_fastbootd" remote="rockchip" />
   <project path="hardware/rockchip/bootctrl" name="android_hardware_rockchip_bootctrl" remote="rockchip" />
   <project path="mkcombinedroot" name="android_mkcombinedroot" remote="rockchip" />
+
+  <!-- PineNote -->
+  <project path="device/pine64/pinenote" name="android_device_pine64_pinenote" remote="rk-aosp" />
+  <project path="device/pine64/pinenote-kernel" name="android_device_pine64_pinenote-kernel" remote="rk-aosp" />
 </manifest>
