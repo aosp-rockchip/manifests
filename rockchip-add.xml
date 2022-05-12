@@ -27,7 +27,7 @@
   </project>
   <project path="external/usb_modeswitch" name="android_external_usb_modeswitch" remote="rockchip"/>
   <project path="hardware/rockchip/libiep" name="android_hardware_rockchip_libiep" remote="rockchip" />
-  <project path="hardware/rockchip/librga" name="android_hardware_rockchip_librga" remote="rockchip" />
+  <project path="hardware/rockchip/librga" name="android_hardware_rockchip_librga" remote="rk-aosp" />
   <project path="external/rk_tee_user" name="android_external_rk_tee_user" remote="rockchip" />
   <project path="rkst" name="android_rkst" remote="rockchip"/>
   <project path="vendor/rockchip/common" name="android_vendor_rockchip_common" remote="rockchip"/>
